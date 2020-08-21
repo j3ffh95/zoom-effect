@@ -10,7 +10,7 @@ window.addEventListener("mousemove", (e) => {
   const { clientX: x, clientY: y } = e;
 
   if (zoomActivated) {
-    body.style.transform = scale(2);
+    body.style.transform = "scale(2)";
     body.style.transformOrigin = `${x}px ${y}px`;
   } else {
     body.style.transform = "none";
